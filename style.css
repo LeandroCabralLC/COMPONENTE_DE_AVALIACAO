@@ -1,0 +1,177 @@
+/* Estilo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141519;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container do feedback */
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.feedback-card {
+    background-color: #1f2630;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    width: 320px;
+    text-align: center;
+    display: block;
+}
+
+.star-icon {
+  width: 50px;
+  height: 50px;
+  border: none;     
+  border-radius: 50%;         
+  display: flex;               
+  align-items: center;
+  color: #f67319;                
+  margin-right: auto;
+  background-color: #272e38;    
+  justify-content: center;      
+}
+
+
+.text1 {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    text-align: left;
+    color: white;
+}
+
+
+ @font-face {
+    font-family: 'Overpass';
+    src: url('fonts/Overpass-VariableFont_wght.ttf') format('truetype');
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    text-align: left;
+    color:  hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    
+}
+
+/* Botões de avaliação */
+.ratings {
+    margin-bottom: 20px;
+}
+
+.rating {
+    background-color: #272e38;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.rating:hover {
+    background-color: white;
+    color: black;
+}
+
+.rating.selected {
+    background-color: #ff9f00;
+    color: black;
+}
+
+/* Botão submit */
+.enviar {
+    background-color: #fc7613;
+    border: none;
+    color: #141519;
+    padding: 10px 108px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 55px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.enviar:hover {
+    background-color: white;
+
+    
+}
+
+
+
+/* Tela de Agradecimento */
+.thank-you-card {
+    background-color: #1f2630;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+    height: 340px;
+    width: 320px;
+    display: none;
+}
+
+
+.text2 {
+  font-weight: normal;
+  color: #ff9f00;
+  font-size: 12px;
+  padding: 8px;
+  margin: 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 50px;
+  background-color: #262f38;
+}
+
+/* Estiliza só o número */
+#selected-rating {
+  font-weight: bold;
+  color: #ff9f00;
+}
+
+.ty {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .feedback-card {
+        width: 90%;
+    }
+
+    .rating {
+        font-size: 1.2rem;
+        padding: 8px;
+        margin: 3px;
+    }
+
+    .enviar {
+        font-size: 0.9rem;
+        padding: 10px 18px;
+    }
+}
